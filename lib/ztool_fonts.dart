@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ztool.dart';
 
+//字体常量
 class ZzFonts {
   static TextStyle fontByBase(double size, Color color, FontWeight weight) =>
       TextStyle(fontSize: size, fontWeight: weight, color: color);

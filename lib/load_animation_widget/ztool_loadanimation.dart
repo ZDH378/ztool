@@ -1,4 +1,5 @@
 /// 此处引用 author: hunghd email: hunghd.yb@gmail.com 方案实现
+/// 使用引用shimmer库实现
 library shimmer;
 
 import 'dart:math';

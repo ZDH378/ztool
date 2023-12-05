@@ -1,3 +1,5 @@
+//仿微信钱包余额动画
+
 import 'package:flutter/material.dart';
 import 'package:ztool/ztool_safe.dart';
 

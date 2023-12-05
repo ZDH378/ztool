@@ -3,6 +3,7 @@ import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:ztool/ztool_color.dart';
 import 'package:ztool/ztool_fonts.dart';
 
+//通用Refresh样式
 const MaterialClassicHeader smartHeader =
     MaterialClassicHeader(color: ZzColor.mainAppColor);
 

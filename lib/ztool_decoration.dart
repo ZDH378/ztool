@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//Decoration 常量
 class ZzDecoration {
   ///仅有圆角
   static BoxDecoration onlyradius(

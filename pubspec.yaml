@@ -1,10 +1,10 @@
 name: ztool
 description: A new Flutter plugin project.
 version: 0.0.1
-homepage:  #项目主页
-publish_to: https://pub-web.flutter-io.cn/ztool  # 发布地址
+homepage:  "https://github.com/ZDH378/ztool"
+# publish_to: https://pub-web.flutter-io.cn/ztool  # 发布地址
 email: "1964494455@qq.com" # 开发者邮箱
-repository: "https:xxxxxxxxx" # 一般写当前插件源代码的Github地址 
+repository: "https://github.com/ZDH378/ztool" # 一般写当前插件源代码的Github地址 
 package: com.example.ztool
 environment:
   sdk: '>=3.0.6 <4.0.0'
@@ -60,7 +60,7 @@ flutter:
   # To add assets to your plugin package, add an assets section, like this:
   assets:
     - assets/images/
-    - assets/icons/
+  #  - assets/icons/
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages

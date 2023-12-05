@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:ztool/ztool.dart';
 
+//安全加载图片.使用cached_network_image实现
 Widget zZNetImage(String imageUrl,
     {Widget? placeholder,
     Widget? errorWidget,

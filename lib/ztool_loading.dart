@@ -3,6 +3,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:loading_indicator_view_plus/loading_indicator_view_plus.dart';
 import 'package:ztool/ztool.dart';
 
+//使用 flutter_easyloading 和 loading_indicator_view_plus实现
 class ZzLoading {
   static show({bool isAutoDismiss = true}) async {
     EasyLoading.instance
