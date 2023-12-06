@@ -23,7 +23,6 @@ export 'ztool_popup.dart';
 export 'ztool_counter.dart';
 export 'package:ztool/load_animation_widget/ztool_loadanimation.dart';
 export 'ztool_permission.dart';
-export 'ztool_print.dart';
 
 class ZTool {
   Future<String?> getPlatformVersion() {
