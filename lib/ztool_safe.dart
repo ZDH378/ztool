@@ -4,9 +4,9 @@ bool $empty(Object? obj) {
 
   if (obj is String && (obj.isEmpty || obj == "")) {
     return true;
-  } else if (obj is List && obj.isEmpty) {
+  } else if (obj is List && (obj.isEmpty || obj.length < 1)) {
     return true;
-  } else if (obj is Map && obj.isEmpty) {
+  } else if (obj is Map && (obj.isEmpty || obj.length < 1)) {
     return true;
   }
 
@@ -27,6 +27,19 @@ String $string(Object? value) {
       return value;
     } else {
       return value.toString();
+    }
+  }
+}
+
+/// 取数组,保证结果一定是数组
+List $list(Object? value) {
+  if (value == null) {
+    return [];
+  } else {
+    if (value is List) {
+      return value;
+    } else {
+      return [];
     }
   }
 }
