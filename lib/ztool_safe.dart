@@ -2,7 +2,7 @@
 bool $empty(Object? obj) {
   if (obj == null) return true;
 
-  if (obj is String && obj.isEmpty) {
+  if (obj is String && (obj.isEmpty || obj == "")) {
     return true;
   } else if (obj is List && obj.isEmpty) {
     return true;
