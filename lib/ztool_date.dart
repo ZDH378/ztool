@@ -32,15 +32,15 @@ class ZzDate {
     String timeString = '';
 
     if (days > 0) {
-      timeString += '$days 天 ';
+      timeString += '$days天';
     }
 
     if (hours > 0) {
-      timeString += '$hours 小时 ';
+      timeString += '$hours小时';
     }
 
     if (remainingMinutes > 0) {
-      timeString += '$remainingMinutes 分钟';
+      timeString += '$remainingMinutes分钟';
     }
 
     return timeString.trim();
