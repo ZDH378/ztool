@@ -1,3 +1,4 @@
+import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 
 //日期格式化组件
@@ -12,16 +13,20 @@ class ZzDate {
   }
 
   static int calculateRemainingMinutes(DateTime futureTime) {
-    DateTime currentTime = DateTime.now();
+    try {
+      DateTime currentTime = DateTime.now();
 
-    if (currentTime.isAfter(futureTime)) {
+      if (currentTime.isAfter(futureTime)) {
+        return 0;
+      }
+
+      Duration remainingDuration = futureTime.difference(currentTime);
+      int remainingMinutes = remainingDuration.inMinutes;
+
+      return remainingMinutes;
+    } on PlatformException catch (e) {
       return 0;
     }
-
-    Duration remainingDuration = futureTime.difference(currentTime);
-    int remainingMinutes = remainingDuration.inMinutes;
-
-    return remainingMinutes;
   }
 
   static String convertMinutesToTimeString(int minutes) {
