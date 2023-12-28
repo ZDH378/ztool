@@ -1,4 +1,5 @@
 import 'package:intl/intl.dart';
+
 //日期格式化组件
 class ZzDate {
   static String formatformstring(DateTime date, String string) {
@@ -9,5 +10,39 @@ class ZzDate {
       return "--:--";
     }
   }
-  
+
+  static int calculateRemainingMinutes(DateTime futureTime) {
+    DateTime currentTime = DateTime.now();
+
+    if (currentTime.isAfter(futureTime)) {
+      return 0;
+    }
+
+    Duration remainingDuration = futureTime.difference(currentTime);
+    int remainingMinutes = remainingDuration.inMinutes;
+
+    return remainingMinutes;
+  }
+
+  static String convertMinutesToTimeString(int minutes) {
+    int days = minutes ~/ (24 * 60);
+    int hours = (minutes % (24 * 60)) ~/ 60;
+    int remainingMinutes = minutes % 60;
+
+    String timeString = '';
+
+    if (days > 0) {
+      timeString += '$days 天 ';
+    }
+
+    if (hours > 0) {
+      timeString += '$hours 小时 ';
+    }
+
+    if (remainingMinutes > 0) {
+      timeString += '$remainingMinutes 分钟';
+    }
+
+    return timeString.trim();
+  }
 }
