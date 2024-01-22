@@ -13,7 +13,7 @@ class ZzLoading {
       ..maskType = EasyLoadingMaskType.custom
       ..radius = 18.0
       ..progressColor = ZzColor.whiteColor
-      ..backgroundColor = ZzColor.colorToD9B0FE
+      ..backgroundColor = ZzColor.mainAppColor
       ..indicatorColor = ZzColor.whiteColor
       ..textColor = ZzColor.whiteColor
       ..toastPosition = EasyLoadingToastPosition.top
