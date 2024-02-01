@@ -9,6 +9,7 @@ class ZzColor {
     return darkness >= 192;
   }
 
+  static Color mainAppColor = const Color(0xFFFF4800);
   static const Color clearColor = Color.fromRGBO(0, 0, 0, 0);
   static const Color whiteColor = Colors.white;
   static const Color pageBackGround = Color(0xFFF5F6F9);
@@ -45,7 +46,7 @@ class ZzColor {
   static const Color colorToF1993D = Color(0xFFF1993D);
   static const Color colorToF2B06A = Color(0xFFF2B06A);
   static const Color colorToFFFB8967 = Color(0xFFFB8967);
-  static const Color mainAppColor = Color(0xFFFF4800);
+
   static const Color colorToFFF1EB = Color(0xFFFFF1EB);
   static const Color lineColor = Color(0xFFF4F5F9);
   static const Color colorToE94A18 = Color(0xFFE94A18);
