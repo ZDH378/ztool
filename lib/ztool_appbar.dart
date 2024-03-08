@@ -92,12 +92,22 @@ class ZzAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ),
               ),
               subtitle?.isNotEmpty == true
-                  ? Text(
-                      subtitle ?? "",
-                      style: const TextStyle(
-                        color: Color(0xFF8695B2),
-                        fontSize: 13,
-                        fontWeight: FontWeight.w400,
+                  ? Padding(
+                      padding: const EdgeInsets.only(top: 5),
+                      child: Text(
+                        subtitle ?? "",
+                        style: ZzColor.isLightColor(
+                                backColor ?? ZzColor.mainAppColor)
+                            ? const TextStyle(
+                                color: Color(0xFF8695B2),
+                                fontSize: 13,
+                                fontWeight: FontWeight.w400,
+                              )
+                            : const TextStyle(
+                                color: Colors.white,
+                                fontSize: 13,
+                                fontWeight: FontWeight.w400,
+                              ),
                       ),
                     )
                   : Container()
